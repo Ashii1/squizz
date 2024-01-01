@@ -101,7 +101,11 @@ const App = () => {
   return (
     <div className="app-container">
       {!isLoggedIn && <Login setUsername={setUsername} onLogin={() => handleLogin(username)} />}
-
+   {error && (
+            <div className="error-message">
+              <p style={{ color: 'red' }}>{error}</p>
+            </div>
+          )}
       {isLoggedIn && (
         <Quiz
           isLoggedIn={isLoggedIn}
@@ -119,11 +123,7 @@ const App = () => {
           />
           )}
     
-          {error && (
-            <div className="error-message">
-              <p style={{ color: 'red' }}>{error}</p>
-            </div>
-          )}
+          
         </div>
       );
     };
