@@ -18,7 +18,7 @@ const Quiz = ({
   return (
     <div className="quiz-container">
       <h1>Quiz App</h1>
-      <p className="welcome-message">Welcome, {username}!</p>
+      <p className="welcome-message">{username}</p>
       <label>
         Select Category:
         <select value={selectedCategory} onChange={handleCategoryChange}>
@@ -50,7 +50,7 @@ const Quiz = ({
         totalPoints > 0 ? (
           <div>
             <h2>Quiz Completed</h2>
-            <p>{`Total Points: ${totalPoints} out of ${questions.length}`}</p>
+            <p>Congrats {username} You Scored {`Congrats ${username} You Scored : ${totalPoints} out of ${questions.length}`}</p>
           </div>
         ) : <h2> Select Category To start The Assessment</h2>
       )}
