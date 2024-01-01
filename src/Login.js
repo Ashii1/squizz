@@ -10,6 +10,7 @@ const Login = ({ setUsername, onLogin }) => {
         <input type="text" onChange={(e) => setUsername(e.target.value)} />
       </label>
       <button onClick={onLogin}>Login</button>
+      <button onClick={onLogin}>Admin</button>
     </div>
   );
 };
