@@ -18,7 +18,7 @@ const App = () => {
     'Kubernetes',
     'JavaScript',
     'DevOps',
-    'Python', // Add other categories as needed
+    'Python', 
   ]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [questions, setQuestions] = useState([]);
