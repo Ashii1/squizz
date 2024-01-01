@@ -15,6 +15,10 @@ const Quiz = ({
   totalPoints,
   error,
 }) => {
+
+  const percentage = ((totalPoints / questions.length) * 100)
+    .toFixed(2);
+  
   return (
     <div className="quiz-container">
       <h1>Quiz App</h1>
@@ -51,6 +55,7 @@ const Quiz = ({
           <div>
             <h2>Quiz Completed</h2>
             <p>{`Congrats ${username} You Scored : ${totalPoints} out of ${questions.length}`}</p>
+            <p>{`Percentage: ${percentage}%`}</p>
           </div>
         ) : <h2> Select Category To start The Assessment</h2>
       )}
