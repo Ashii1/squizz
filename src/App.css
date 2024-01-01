@@ -65,7 +65,9 @@ button {
 .login-container input[type="text"] {
   margin-bottom: 15px;
 }
-
+.error-message{
+  margin-left:10px;
+}
 .quiz-container .welcome-message {
   text-align: center;
 }
