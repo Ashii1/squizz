@@ -1,0 +1,129 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app-container {
+  width: 80%;
+  max-width: 800px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container,
+.quiz-container {
+  padding: 20px;
+}
+
+.login-container h1,
+.quiz-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.login-container label,
+.quiz-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-container input,
+.quiz-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.login-container button,
+.quiz-container button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-container button:hover,
+.quiz-container button:hover {
+  background-color: #45a049;
+}
+
+.login-container input[type="text"] {
+  margin-bottom: 15px;
+}
+
+.quiz-container .welcome-message {
+  text-align: center;
+}
+
+.quiz-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.quiz-container select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.quiz-container .question-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.quiz-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.quiz-container button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.quiz-container button:hover {
+  background-color: #45a049;
+}
+
+.quiz-container .quiz-completed {
+  text-align: center;
+}
+
+.quiz-container p {
+  margin-bottom: 15px;
+  color: #333;
+}
+/* App.css */
+
+.quiz-container .question-status {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.quiz-container .question-status span {
+  font-weight: bold;
+}
