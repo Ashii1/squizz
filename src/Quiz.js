@@ -17,7 +17,7 @@ const Quiz = ({
 }) => {
 
   const percentage = ((totalPoints / questions.length) * 100)
-    .toFixed(2);
+    
   
   return (
     <div className="quiz-container">
