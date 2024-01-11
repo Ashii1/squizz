@@ -72,6 +72,7 @@ const App = () => {
     setCurrentQuestionIndex(0);
     setSelectedOption('');
     setTotalPoints(0);
+    setSelectedCategory(false);
   };
 
   const handleOptionChange = (e, index) => {
