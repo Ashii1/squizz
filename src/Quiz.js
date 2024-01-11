@@ -26,7 +26,7 @@ const Quiz = ({
       <label>
         Select Category:
         <select value={selectedCategory} onChange={handleCategoryChange}>
-          <option value="">Choose a category</option>
+          <option value="disabled">Choose a category</option>
           {categories.map((category, index) => (
             <option key={index} value={category}>
               {category}
