@@ -96,6 +96,7 @@ const App = () => {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
       setSelectedOption('');
     }
+    setSelectedCategory(false)
   };
 
   return (
